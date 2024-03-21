@@ -1,0 +1,579 @@
+body{
+    background-color: rgb(252, 249, 248); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(226, 217, 210);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(240, 228, 217);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-button {
+    background-color: rgb(102, 163, 254);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color:  rgb(240, 228, 217);
+}
+
+/* navbar styling starts here */
+nav{ 
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+nav .navbar{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    padding: 0 16px;
+}
+
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+
+.menu li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+.menu a{
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    padding: 10px 0;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(195, 194, 252);
+}
+
+/* Home Section Styling Starts here */
+.home{
+    background-color: rgb(114, 101, 96);
+    height: 90vh;
+    padding-top: 5rem;
+    width: 100%;
+    background: url(../imagES/intro-bg.jpg) no-repeat;
+    background-size:cover;
+    background-position: left;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    font-weight: lighter;
+}
+
+
+.home .home-content{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+}
+
+
+.text-one{
+    color: rgb(255, 255, 255);
+    font-size: 37px;
+   
+}
+.text-two{
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: -3px;
+    font-family: Impact, Haettenschweiler, sans-serif;
+
+}
+
+.text-three{
+    color: white;
+    font-size: 1.1rem;
+    margin: 5px 0;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.button{
+    background-color:  rgb(5, 137, 225);
+    width: 100%;
+    height: 90px;
+}
+
+.button > button {
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: rgb(5, 137, 225);
+    cursor: pointer;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    transition: all 0.4s ease;
+    position: relative;
+    left: 100px;
+    top: 20px;
+}
+.button > button a{
+    color:white;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.button > button:hover{
+    background-color: white;
+    border-color: rgb(61, 48, 43);
+    color:  rgb(5, 137, 225) ;
+}
+
+.button > button:hover a{
+    color: rgb(5, 137, 225);
+}
+
+.button img{
+    position: relative;
+    left: 250px;
+    top: 30px;
+}
+
+/* Services Section */
+
+.services{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 700px;
+}
+
+.services .service-content h2{
+    color: rgb(6, 108, 176);
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+
+.service-content .left{
+    position: relative;
+    left: 150px;
+    top: 200px;
+}
+
+.left img{
+    width: 150px;
+    height: 100px;
+}
+
+.left p{
+    position: relative;
+    left: 190px;
+    top: -83px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: grey;
+}
+
+.service-content .right{
+    position: relative;
+    left: 950px;
+    top: -300px;
+}
+
+ /* Speech bubble container */
+ .right .speech-bubble {
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    color: #040000;
+    padding: 20px;
+    border-radius: 0px;
+    max-width: 400px; /* Adjust the width as needed */
+    top: -100px;
+    border: rgb(220, 220, 220) solid;
+}
+.right .img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 40px;
+    left: 10px;
+}
+/* Triangle (arrow) pointing upwards */
+/* .speech-bubble::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    border-width: 10px;
+    border-bottom-color:gainsboro;
+    transform: translateX(-50%);
+} */
+.right .point{
+    position: relative;
+    left: 220px;
+    top: 94px;
+}
+.right .also p{
+    position: relative;
+    left: 120px;
+    top: -63px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+
+.right .speech-bubble p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+.right .name{
+    position: relative;
+    left: 125px;
+    top: -40px;
+}
+/* Covered Section */
+
+.covered{
+    background: url(../images/particles.png);
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 1450px;
+}
+
+.covered .container1{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 290px;
+    top: 100px;
+    text-align: center;
+}
+
+.container1 img{
+    width: 300px;
+}
+
+.container1 h4{
+    color:  rgb(6, 108, 176);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+    top: 30px;
+}
+
+.container1 .description{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 13px;
+    position: absolute;
+    top: 220px;
+    padding: 15px;
+    text-align: center;
+}
+
+.container1 .price{
+    color: rgb(5, 255, 255);
+    font-family:  Arial, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 240px ;
+    left: 20px;
+    text-align: center;
+    padding: 70px;
+}
+
+.covered .container2{
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 885px;
+    top: 100px;
+}
+
+.container2 img{
+    width: 300px;
+}
+
+.container2 h4{
+    color:  rgb(6, 108, 176);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    top: 30px;
+}
+
+.container2 .description{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 13px;
+    position: absolute;
+    top: 220px;
+    padding: 15px;
+    text-align: center;
+}
+
+.container2 .price{
+    color: rgb(5, 255, 255);
+    font-family:  Arial, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    top: 240px ;
+    left: 20px;
+    text-align: center;
+    padding: 70px;
+}
+
+.covered .btn{
+    color: white;
+    background:linear-gradient(to right, rgb(5, 209, 231),rgb(10, 158, 181));
+    border-radius: 0.5rem;
+    width: 220px;
+    height: 40px;
+    border-color: white;
+    position: relative;
+    left: 620px;
+    top: 570px;
+}
+
+.provide{
+    background-color: white;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 2120px;
+
+}
+
+.provide .image{
+    background-color: rgb(20, 164, 164) ;
+    border-radius: 100%;
+    width: 130px;
+    height: 130px;
+    border: teal solid thick;
+}
+
+.image img{
+    width: 80px;
+    height: 80px;
+   padding: 10px;
+   position: relative;
+   left: 20px;
+   top: 20px;
+   display: flex;
+   flex-direction: row;
+}
+
+.provide h3{
+    font-family:'Arial Narrow', Arial, sans-serif;
+    color:rgb(20, 164, 164);
+    font-size: 35px;
+    position: relative;
+    top: 100px;
+    left: 520px;
+}
+
+.provide .txt{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.provide .container{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    color: grey;
+}
+
+.provide .c1{
+    position: relative;
+    top: 200px;
+    left: 200px;
+  
+}
+
+.provide .c2{
+    position: relative;
+    top: 39px;
+    left: 520px;
+  
+}
+
+.provide .c3{
+    position: relative;
+    top: -123px;
+    left: 840px;
+  
+}
+
+.provide .c4{
+    position: relative;
+    top: -300px;
+    left: 1140px;
+  
+}
+
+.provide .container p{
+    text-align: center;
+    position: relative;
+    left: -670px;
+    top: 30px;
+} 
+
+/* Reviews */
+
+.reviews{
+    background-color: rgb(5, 137, 225);
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 2100px;
+}
+
+.reviews .container{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    position: relative;
+    top: 140px;
+    color: white;
+}
+
+.reviews .r1{
+    position: relative;
+    left: 200px;
+}
+
+.reviews .r2{
+    position: relative;
+    left: -10px;
+}
+
+.reviews .r3{
+    position: relative;
+    left: 
+    -200px;
+}
+
+.reviews h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    left: 35px;
+}
+
+.reviews .quote-top{
+    position: relative;
+    left: -21px;
+    top: 10px;
+}
+
+.reviews p{
+    text-align: center;
+}
+
+.reviews .r1 .quote-btm{
+    position: relative;
+    left: 140px;
+    top: 130px;
+}
+
+.reviews .r2 .quote-btm{
+    position: relative;
+    left: 140px;
+    top: 75px;
+}
+
+.reviews .r3 .quote-btm{
+    position: relative;
+    left: 140px;
+    top: 110px;
+}
+
+.reviews p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.reviews .join{
+    background-color: rgb(5, 137, 225);
+    color: white;
+    position: relative;
+    width: 180px;
+    height: 50px;
+    top: 170px;
+    left: 640px;
+    border-color: white;
+}
+
+/* Footer */
+
+.footer{
+    background-color: white;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    top: 2100px;
+}
+.footer p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer div{
+    font-size: 15px;
+    padding: 10px 10px;
+    position: relative;
+    top: 30px;
+    left: 100px;
+}
+
+.footer .logo{
+    position: relative;
+    left: 1300px;
+    top: -100px;
+}
